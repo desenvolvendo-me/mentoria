@@ -1,14 +1,3 @@
-#Problema: 
-# Verificar se uma número é par ou ímpar
-
-#Solução
-#- Receber um número
-#- Verificar é ser um número
-#- Verificar é divisivel por 2
-#- Se for divisivel por 2 é par
-#- Senão for divisivel por 2 é impar
-
-#Código
 def par_impar(numero)
     # Verifica se o argumento é um número (Integer ou Float)
     unless numero.is_a?(Numeric)
