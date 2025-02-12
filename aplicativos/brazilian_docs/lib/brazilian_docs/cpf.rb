@@ -17,5 +17,9 @@ module BrazilianDocs
 
       formatted || unformatted
     end
+
+    def self.clean_format(cpf)
+      cpf.gsub(/\D/, '')
+    end
   end
 end

@@ -35,4 +35,10 @@ RSpec.describe BrazilianDocs::Cpf do
       end
     end
   end
+
+  describe '.clean_format' do
+    it 'return unformatted CPF' do
+      expect(described_class.clean_format('123.456.789-09')).to eq('12345678909')
+    end
+  end
 end
